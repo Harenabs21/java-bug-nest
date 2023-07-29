@@ -14,11 +14,11 @@ public class TestCases {
         PartTimeEmployee lita = TestCases.partTimeEmployeeLita();
 
         // TODO : prevent the direct access here
-        koto.monthlySalary = 6_000_000;
-        lita.hoursWorked = 1_000;
+        System.out.println(koto.getMonthlySalary());
+        System.out.println(lita.getHoursWorked());
 
         // TODO : do not allow incoherent changes on salaries (applies to full time employees too)
-        lita.hourlyRate = -10_000_000;
+        //lita.hourlyRate = -10_000_000;
 
         // TODO : fix the string format of both full time and part time employees
         // NOTE : do not show sensitive data such as hourlyRate or monthlySalary here !
