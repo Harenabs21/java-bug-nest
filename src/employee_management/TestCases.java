@@ -22,7 +22,7 @@ public class TestCases {
 
         // TODO : fix the string format of both full time and part time employees
         // NOTE : do not show sensitive data such as hourlyRate or monthlySalary here !
-        System.out.println("Details about Koto " + koto);
-        System.out.println("Details about Lita " + lita);
+        System.out.println("Details about Koto\n" + koto);
+        System.out.println("Details about Lita \n" + lita);
     }
 }

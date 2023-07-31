@@ -1,25 +1,15 @@
 package employee_management;
 
-public class PartTimeEmployee {
-    private int employeeId;
-    private String name;
+public class PartTimeEmployee extends Employee {
     private double hoursWorked;
     private double hourlyRate;
-
+    
+    // Add getter for the class PartTimeEmployee
 
     public PartTimeEmployee(int employeeId, String name, double hoursWorked, double hourlyRate) {
-        this.employeeId = employeeId;
-        this.name = name;
+        super(employeeId, name);
         this.hoursWorked = hoursWorked;
         this.hourlyRate = hourlyRate;
-    }
-    // Add getter for the class PartTimeEmployee
-    public int getEmployeeId() {
-        return employeeId;
-    }
-
-    public String getName() {
-        return name;
     }
 
     public double getHoursWorked() {
@@ -36,11 +26,7 @@ public class PartTimeEmployee {
 
     @Override
     public String toString() {
-        return "{" +
-                "employeeId=" + employeeId +
-                ", name='" + name + '\'' +
-                ", hoursWorked=" + hoursWorked+
-                '}';
+        return "id employee "+getEmployeeId()+"\nname:"+getName()+"\nhour of work:"+hoursWorked;
     }
 }
 
